@@ -7,12 +7,20 @@ using namespace std;
 class Sommet
 {
 	public:
+		//Constructeurs
 		Sommet();
-		Sommet(string type, list<Arc> arcs, list<Arc> arcsA);
+		Sommet(string type, list<Arc> arcs);
+		//Accesseurs
+		string GetType();
+		void SetType(string type);
+
+		//Ajout dans les listes
+		void AjouterArc(Arc arc);
+		void AjouterArcEmpruntable(Arc arc);
 	private:
 		string type_;
 		list<Arc> arcs_;
-		list<Arc> arcsAccessibles_;
+		list<Arc> arcsEmpruntables_;
 };
 /*
 EXTRACTION GRAPH 

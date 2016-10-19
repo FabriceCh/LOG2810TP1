@@ -19,14 +19,20 @@ class Graphe
 		//Sets, Gets
 		int GetEssence();
 		void SetEssence(int e);
+
 		int GetEssenceMax();
 		void SetEssenceMax(int e);
+
 		int GetElectricite();
 		void SetElectricite(int e);
+
 		int GetElectriciteMax();
 		void SetElectriciteMax(int e);
+
+		//Ajout dans les listes
 		void AjouterArc(Arc arc);
-		void EnleverArc(Arc arc);
+		void AjouterSommet(Sommet sommet);
+		
 private:
 		int essenceMax_;
 		int essence_;
