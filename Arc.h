@@ -1,3 +1,9 @@
+/**
+* Classe Arc
+* @author : Fabrice Charbonneau, Soukaina Moussaoui et Martin Klissarov
+* @date   : 19 octobre 2016
+*/
+
 #pragma once
 #include <string>
 #include "Sommet.h"
@@ -12,19 +18,19 @@ class Arc
 		Arc(int d, int EssA, int EleA, Sommet* A, Sommet* B);
 
 		//Accesseurs
-		int GetDistance();
+		const int GetDistance();
 		void SetDistance(int d);
 
-		int GetEssenceMaxA();
+		const int GetEssenceMaxA();
 		void SetEssenceMaxA(int essMaxA);
 
-		int GetEleMaxA();
+		const int GetEleMaxA();
 		void SetEleMaxA(int eleMaxA);
 
-		Sommet* GetSommetA();
+		const Sommet* GetSommetA();
 		void SetSommetA(Sommet* sommet);
 
-		Sommet* GetSommetB();
+		const Sommet* GetSommetB();
 		void SetSommetB(Sommet* sommet);
 
 	private:

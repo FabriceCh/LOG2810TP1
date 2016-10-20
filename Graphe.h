@@ -1,11 +1,16 @@
+/**
+* Classe Graphe
+* @author : Fabrice Charbonneau, Soukaina Moussaoui et Martin Klissarov
+* @date   : 19 octobre 2016
+*/
+
 #pragma once
 #include <iostream>
 #include <string>
 #include <list>
 
-
-#include "Arc.cpp"
-#include "Sommet.cpp"
+#include "Arc.h"
+#include "Sommet.h"
 
 using namespace std;
 
@@ -17,16 +22,16 @@ class Graphe
 		//constructeur par paramètre
 		Graphe(int ess, int essMax, int ele, int eleMax, list<Arc> listeArc, list<Sommet> listeSommet);
 		//Sets, Gets
-		int GetEssence();
+		const int GetEssence();
 		void SetEssence(int e);
 
-		int GetEssenceMax();
+		const int GetEssenceMax();
 		void SetEssenceMax(int e);
 
-		int GetElectricite();
+		const int GetElectricite();
 		void SetElectricite(int e);
 
-		int GetElectriciteMax();
+		const int GetElectriciteMax();
 		void SetElectriciteMax(int e);
 
 		//Ajout dans les listes

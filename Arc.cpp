@@ -1,4 +1,11 @@
+/**
+* Implémentation Classe Arc
+* @author : Fabrice Charbonneau, Soukaina Moussaoui et Martin Klissarov
+* @date   : 19 octobre 2016
+*/
+
 #include "Arc.h"
+#include "Sommet.h"
 ///*Constructeurs*///
 //Constructeur par défaut
 Arc::Arc()
@@ -14,7 +21,7 @@ Arc::Arc(int d, int EssA, int EleA, Sommet* A, Sommet* B)
 {};
 
 ///*Accesseurs*///
-int Arc::GetDistance()
+const int Arc::GetDistance()
 {
 	return distance_;
 };
@@ -23,7 +30,7 @@ void Arc::SetDistance(int d)
 	distance_ = d;
 };
 
-int Arc::GetEssenceMaxA()
+const int Arc::GetEssenceMaxA()
 {
 	return EssenceMaxA_;
 };
@@ -32,7 +39,7 @@ void Arc::SetEssenceMaxA(int essMaxA)
 	EssenceMaxA_ = essMaxA;
 };
 
-int Arc::GetEleMaxA()
+const int Arc::GetEleMaxA()
 {
 	return EleMaxA_;
 };
@@ -41,7 +48,7 @@ void Arc::SetEleMaxA(int eleMaxA)
 	EleMaxA_ = eleMaxA;
 };
 
-Sommet* Arc::GetSommetA()
+const Sommet* Arc::GetSommetA()
 {
 	return sommetA_;
 };
@@ -50,7 +57,7 @@ void Arc::SetSommetA(Sommet* sommet)
 	sommetA_ = sommet;
 };
 
-Sommet* Arc::GetSommetB()
+const Sommet* Arc::GetSommetB()
 {
 	return sommetB_;
 };

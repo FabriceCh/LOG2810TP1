@@ -1,3 +1,9 @@
+/**
+* Implémentation Classe Graphe
+* @author : Fabrice Charbonneau, Soukaina Moussaoui et Martin Klissarov
+* @date   : 19 octobre 2016
+*/
+
 #include "Graphe.h"
 ///*Constructeurs*///
 //constructeur par défaut
@@ -16,7 +22,7 @@ Graphe::Graphe(int ess, int essMax, int ele, int eleMax, list<Arc> listeArc, lis
 {};
 
 ///*Accesseurs*///
-int Graphe::GetEssence()
+const int Graphe::GetEssence()
 {
 	return essence_;
 };
@@ -25,7 +31,7 @@ void Graphe::SetEssence(int e)
 	essence_ = e;
 };
 
-int Graphe::GetEssenceMax()
+const int Graphe::GetEssenceMax()
 {
 	return essenceMax_;
 };
@@ -34,7 +40,7 @@ void Graphe::SetEssenceMax(int e)
 	essence_ = e;
 };
 
-int Graphe::GetElectricite()
+const int Graphe::GetElectricite()
 {
 	return electricite_;
 };
@@ -43,7 +49,7 @@ void Graphe::SetElectricite(int e)
 	essence_ = e;
 };
 
-int Graphe::GetElectriciteMax()
+const int Graphe::GetElectriciteMax()
 {
 	return electriciteMax_;
 };
